@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>hello worms :P</title>
+    <style>
+        body {
+            margin: 0;
+            background: #1e1428;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            font-family: monospace;
+        }
+        canvas {
+            border-radius: 12px;
+            box-shadow: 0 0 40px rgba(140, 60, 220, 0.4);
+        }
+    </style>
+</head>
+<body>
+    <canvas id="worm-canvas"></canvas>
+    <script type="module">
+        import init from './pkg/hello_worms.js';
+        init();
+    </script>
+</body>
+</html>
